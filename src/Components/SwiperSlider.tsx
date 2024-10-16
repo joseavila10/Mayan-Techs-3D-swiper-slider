@@ -30,10 +30,13 @@ const SwipperSlider = (props:any) => {
             props.swiperItems.map((item:any, i:number) => (
                 <SwiperSlide key={i}>
                     <img src={item.imgSrc} alt="Project 1" />
-                    <div className="item-info">
-                        <h3>{item.title}</h3>
-                        <p>{item.description}</p>
-                    </div>
+                    {
+                        (item.title || item.description) &&
+                        <div className="item-info">
+                            {item.title && <h3>{item.title}</h3> }
+                            {item.description && <p>{item.description}</p>}
+                        </div>
+                    }
                 </SwiperSlide>
             ))
         }

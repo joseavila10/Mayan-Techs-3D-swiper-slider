@@ -12,8 +12,6 @@ function App() {
   const swiperItems:any[] = [
     {
       imgSrc: slide_image_1,
-      title: 'Mayan Techs',
-      description: 'We provide professiona services',
     },
     {
       imgSrc: slide_image_2,
@@ -38,7 +36,6 @@ function App() {
     {
       imgSrc: slide_image_6,
       title: 'Mayan Technologies',
-      description: 'A top service company',
     },
     {
       imgSrc: slide_image_7,
